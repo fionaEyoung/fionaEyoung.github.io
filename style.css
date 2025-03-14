@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+    /* background: #ffffff; */
+}
+
+
+.main {
+  width: 500px;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* .col {
+  width: 45%;
+} */
+
+.portrait {
+  width:200px;
+  height:200px;
+  margin:0 auto;
+  border-radius:50%;
+  object-fit:cover
+}
+
+/* Rounded border */
+hr.rounded {
+  border: 1px solid;
+  border-radius: 1px;
+  margin: 10% 25%;
+  color: black;
+}
+
+i {
+  font-style: italic;
+}
+
+h1 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 15;
+    text-align: center;
+}
+
+
+#header {
+  text-align: center;
+}
+#about {
+  text-align: left;
+}
+
+#icons {
+  margin-top: 20px;
+}
+
+.icon, .icon_light, .icon_dark {
+  width: 30px;
+}
+
+#links {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13pt;
+    text-align: center;
+    padding: 15px 0px;
+    margin-bottom: 30px;
+    width: 100%;
+    /*background: #eee;*/
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: inherit;
+  /* -moz-column-count: 2; */
+  -moz-column-gap: 40px;
+  -moz-column-width: 230px;
+  /* -webkit-column-count: 2; */
+  -webkit-column-gap: 40px;
+  -webkit-column-width: 230px;
+  /* column-count: 2; */
+  column-gap: 40px;
+  column-width: 230px;
+}
+
+a {
+  text-decoration: none;
+  color: #666600;
+}
+
+a:hover {
+  color: #F19706;
+}
+
+nav a {
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+nav a:visited {
+  color: inherit;
+}
+
+nav .selected {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.icon_dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body, hr.rounded {
+    background: #2F3031;
+    color: #ffffff;
+  }
+  a  {
+    color: #F9BC43;
+  }
+  a:hover {
+    color: #666600;
+  }
+
+  .icon_light {
+    display: none;
+  }
+
+  .icon_dark {
+    display: inline;
+  }
+
+}
+
+/* @media screen and (max-width: 510px) {
+  .main {
+     margin: auto21;
+     max-width: 90%;
+  }
+  ul {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    column-width: 400px;
+  }
+} */
