@@ -52,24 +52,43 @@
         </p>
         <p>Since you're here though, here are some podcast recommendations:
         </p>
-        <ul>
-          <li> <a href="https://www.alieward.com/ologies">Ologies</a> </li>
-          <li> <a href="https://theintelligence.economist.com/">The Intelligence</a> </li>
-          <li> <a href="https://wikid.simplecast.com/">Wiki'd</a> </li>
-          <li> <a href="https://www.unmade.fm/">The Unmade Podcast</a> </li>
-          <li> <a href="https://www.wsj.com/podcasts/bad-bets">Bad Bets</a> </li>
-          <li> <a href="https://shows.acast.com/nobodypanic">Nobody Panic</a> </li>
-          <li> <a href="https://www.theallusionist.org/">The Allusionist</a> </li>
-          <li> <a href="https://podcasts.apple.com/gb/podcast/empire/id1639561921">Empire</a> </li>
-          <li> <a href="https://www.wnycstudios.org/podcasts/anthropocene-reviewed">The Anthropocene Reviewed</a> </li>
-          <li> <a href="https://deletethis.libsyn.com/">Delete This!</a> </li>
-          <li> <a href="https://play.acast.com/s/theeconomistmoneytalks">Money Talks</a> </li>
-          <li> <a href="https://www.atlasobscura.com/podcast">Atlas Obscura</a> </li>
-        </ul>
+        <ul id="podcast-list"></ul>
+        
+    <p><button onclick="selectPodcast()">Click here</button> to randomly select a recommendation just for you: <span id="random-rec"></span>
+    </p>
 
+    <script>
+
+    const podcasts = [
+      '<a href="https://www.alieward.com/ologies">Ologies</a>',
+      '<a href="https://theintelligence.economist.com/">The Intelligence</a>',
+      '<a href="https://searchengine.show">Search Engine</a>',
+      '<a href="https://www.unmade.fm/">The Unmade Podcast</a>',
+      '<a href="https://www.wsj.com/podcasts/bad-bets">Bad Bets</a>',
+      '<a href="https://shows.acast.com/nobodypanic">Nobody Panic</a>',
+      '<a href="https://www.theallusionist.org/">The Allusionist</a>',
+      '<a href="https://podcasts.apple.com/gb/podcast/empire/id1639561921">Empire</a>',
+      '<a href="https://www.wnycstudios.org/podcasts/anthropocene-reviewed">The Anthropocene Reviewed</a>',
+      '<a href="https://deletethis.libsyn.com/">Delete This!</a>',
+      '<a href="https://play.acast.com/s/theeconomistmoneytalks">Money Talks</a>',
+      '<a href="https://www.atlasobscura.com/podcast">Atlas Obscura</a>'
+    ];
+
+    function selectPodcast() {
+        document.getElementById("random-rec").innerHTML =
+            podcasts[Math.floor(Math.random() * podcasts.length)];
+    };
+
+    let list = document.getElementById("podcast-list");
+    
+    podcasts.forEach((item) => {
+        let li = document.createElement("li");
+        li.innerHTML = item;
+        list.appendChild(li);
+    });
+    </script>
 
     </section>
-
 
 </body>
 </html>
