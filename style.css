@@ -25,10 +25,9 @@ body {
   width: 45%;
 } */
 
-.portrait {
+#portrait {
   width:200px;
   height:200px;
-  margin:0 auto;
   border-radius:50%;
   object-fit:cover
 }
@@ -54,7 +53,10 @@ h1 {
 
 #header {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
+
 #about {
   text-align: left;
 }
