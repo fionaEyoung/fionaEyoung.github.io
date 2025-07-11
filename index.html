@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+---
+layout: base.html
+title: Home
+---
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -12,7 +16,7 @@
 
 <body>
 
-  <div class="main">
+  <main>
 
     <section id="header">
 
@@ -43,19 +47,19 @@
 
     </section>
 
-        <hr class="rounded">
+        <hr class="rounded"> -->
 
     <section id="about">
 
-        <p>I'm a research associate at the Alan Turing Institute, investigating multimodal machine learning for clinical data as part of the <a href="https://www.turing.ac.uk/research/research-projects/alan-turing-institute-roche-strategic-partnership">Turing-Roche strategic partnership</a>.
-          In 2024 I completed a doctorate in medical image computing at University College London, working on intraoperative diffusion MRI.
-          This webpage is simply a place for links to my various public profiles around the web, and for me to
+        <p>I'm a research associate at the Alan Turing Institute, investigating multimodal machine learning for clinical data as part of the <a href="https://www.turing.ac.uk/research/research-projects/alan-turing-institute-roche-strategic-partnership">Turing-Roche strategic partnership</a>.</p>
+        <p>In 2024 I <a href="https://github.com/fionaEyoung/Thesis">completed a doctorate</a> in medical image computing at the UCL Great Ormond Street Institute of Child Health (<a href="https://www.ucl.ac.uk/population-health-sciences/child-health/research/developmental-neurosciences/clinical-systems-neuroscience-section/developmental-imaging-and-biophysics">Developmental Imaging and Biophysics section</a>), University College London, working on intraoperative diffusion MRI. As part of this project I developed an image processing tool for automatically segmenting brain fibre tracts from diffusion MRI images, <a href="https://github.com/fionaEyoung/tractfinder">available</a> as an external MRtrix3 module.</p>
+        <p>This webpage is simply a place for links to my various public profiles around the web, and for me to
           practice the basics of web development.
         </p>
         <p>Since you're here though, here are some podcast recommendations:
         </p>
         <ul id="podcast-list"></ul>
-        
+
     <p><button onclick="selectPodcast()">Click here</button> to randomly select a recommendation just for you: <span id="random-rec"></span>
     </p>
 
@@ -69,11 +73,14 @@
       '<a href="https://www.wsj.com/podcasts/bad-bets">Bad Bets</a>',
       '<a href="https://shows.acast.com/nobodypanic">Nobody Panic</a>',
       '<a href="https://www.theallusionist.org/">The Allusionist</a>',
-      '<a href="https://podcasts.apple.com/gb/podcast/empire/id1639561921">Empire</a>',
+      // '<a href="https://podcasts.apple.com/gb/podcast/empire/id1639561921">Empire</a>',
+      '<a href="https://www.beachtoosandy.com/">Beach Too Sandy, Water Too Wet</a>',
       '<a href="https://www.wnycstudios.org/podcasts/anthropocene-reviewed">The Anthropocene Reviewed</a>',
       '<a href="https://deletethis.libsyn.com/">Delete This!</a>',
-      '<a href="https://play.acast.com/s/theeconomistmoneytalks">Money Talks</a>',
-      '<a href="https://www.atlasobscura.com/podcast">Atlas Obscura</a>'
+      // '<a href="https://play.acast.com/s/theeconomistmoneytalks">Money Talks</a>',
+      // '<a href="https://www.atlasobscura.com/podcast">Atlas Obscura</a>',
+      '<a href="https://www.cbc.ca/listen/cbc-podcasts/1353">Understood: Who Broke the Internet?</a>',
+      '<a href="https://freakonomics.com">Freakonomics Radio</a>',
     ];
 
     function selectPodcast() {
@@ -82,7 +89,7 @@
     };
 
     let list = document.getElementById("podcast-list");
-    
+
     podcasts.forEach((item) => {
         let li = document.createElement("li");
         li.innerHTML = item;
@@ -91,6 +98,8 @@
     </script>
 
     </section>
+<!--
+</main>
 
 </body>
-</html>
+</html> -->
