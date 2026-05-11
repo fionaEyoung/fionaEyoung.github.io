@@ -37,10 +37,12 @@ main {
 
 footer {
   font-size: 9pt;
-  margin-top: 10%;
+  margin-top: 5%;
+  padding-bottom: 2%;
   a {
-    color: #cdcecf
+    color: #cdcecf;
   }
+  color: #cdcecf;
 }
 
 /* .col {
